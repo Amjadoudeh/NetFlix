@@ -1,6 +1,6 @@
 .row {
   margin-left: 26px;
-  color: white;
+  color: black;
 }
 .row_posters {
   display: flex;
@@ -19,7 +19,7 @@
   margin-right: 12px;
 }
 .row_poster:hover {
-  transform: scale(1.12);
+  transform: scale(1.1);
 }
 .row_posterLarge {
   max-height: 250px;
