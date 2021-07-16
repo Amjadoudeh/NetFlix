@@ -29,21 +29,19 @@ function Banner() {
       style={{
         backgroundSize: 'cover',
         backgroundImage: `url("https://image.tmdb.org/t/p/original/${movie?.backdrop_path}")`,
-        backgroundPosition: 'center center',
+        backgroundPosition: 'center center center center',
       }}>
-      <div className='banner__contents'>
-        <h1 className='banner__title'>
+      <div className='banner_contents'>
+        <h1 className='banner_title'>
           {movie?.title || movie?.name || movie?.original_name}
         </h1>
-        <div className='banner__buttons'>
-          <button className='banner__button'>Play</button>
-          <button className='banner__button'>My List</button>
+        <div className='banner_buttons'>
+          <button className='banner_button'>Play</button>
+          <button className='banner_button'>My List</button>
         </div>
-        <h3 className='banner__description'>
-          {truncate(movie?.overview, 150)}
-        </h3>
+        <h3 className='banner_description'>{truncate(movie?.overview, 150)}</h3>
       </div>
-      <div className='banner--fadeBottom' />
+      <div className='banner_fadeBottom' />
     </header>
   );
 }
